@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// index
+Route::get('/', 'IndexController@index')->name('web.index');

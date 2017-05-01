@@ -40,6 +40,14 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             'bindings',
         ],
+
+        'admin' => [
+            \Illuminate\Session\Middleware\StartSession::class,
+            \App\Http\Middleware\Admin\VerifySession::class, // 验证session
+            \App\Http\Middleware\Admin\AdminData::class, // 后台页面数据
+        ],
+
+        'service' => [],
     ];
 
     /**
