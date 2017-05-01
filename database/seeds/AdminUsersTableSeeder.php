@@ -13,9 +13,9 @@ class AdminUsersTableSeeder extends Seeder
     public function run()
     {
         $user = new AdminUser();
-        $user->username = 'michael';
+        $user->username = 'admin';
         $user->password = '$2y$10$V9u8sKCiuIgFFajtXh3Eee/XVtkG2yHqjpSHlTJ5B/j.fzpRR0XOm';
-        $user->name = 'Michael Chi';
+        $user->name = 'Admin';
         $user->group_id = 0;
         $user->email = '';
         $user->mobile = '';
